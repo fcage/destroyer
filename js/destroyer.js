@@ -1,5 +1,6 @@
 var gia = function(gia, $){
-  
+	'use strict'
+
 	gia.fullSize = true;
 		
 	gia.init = function(){
@@ -27,7 +28,7 @@ var gia = function(gia, $){
 			
 	}
 	
-	moveSocialTools = function(){
+	var moveSocialTools = function(){
 		//moves the native social tools: Twitter and Facebook, others are removed
 		$('#content-actions').appendTo('#social-tools');
 		$('.google-plus').remove();
